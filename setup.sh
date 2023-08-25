@@ -178,10 +178,6 @@ clear
 ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
 # install clouflare JQ
 apt install jq curl -y
-# install admin ip
-wget https://raw.githubusercontent.com/${GitUser}/sapphire/main/menu/addip.sh && chmod +x addip.sh && screen -S addip.sh ./addip.sh
-echo -e "\e[0;32mDONE INSTALL ADMIN \e[0m"
-clear
 # install webserver
 apt -y install nginx
 cd
