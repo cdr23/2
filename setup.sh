@@ -21,14 +21,14 @@ echo ''
 echo "                                                              "
 echo -e "$Lyellow                ⚡ PREMIUM SPEED SCRIPT ⚡"$NC
 echo -e "$green.........................................................."$NC
-echo -e "$Lyellow                  Autoscript By NevermoreSSH"$NC
-echo -e "$Lyellow                    CONTACT TELEGRAM"$NC
-echo -e "$Lyellow                       @todfix667"$NC
+echo -e "$Lyellow                 Autoscript By CANDRA"$NC
+echo -e "$Lyellow                   CONTACT TELEGRAM"$NC
+echo -e "$Lyellow                     @CandraVpnz"$NC
 echo -e "$green.........................................................."$NC
 echo ''
-echo -e "$Lyellow                       Wait 6 Seconds!"$NC
+echo -e "$Lyellow                    Wait 3 Seconds!"$NC
 echo -e "$green.........................................................."$NC
-sleep 6
+sleep 3
 clear
 if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
