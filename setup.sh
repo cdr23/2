@@ -1,6 +1,6 @@
 #!/bin/bash
 #wget https://github.com/${GitUser}/
-GitUser="NevermoreSSH"
+GitUser="cdr23"
 # Color Validation
 Lred='\e[1;91m'
 Lgreen='\e[92m'
@@ -50,7 +50,7 @@ VALIDITY() {
     today=$(date -d "0 days" +"%Y-%m-%d")
     Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
-        echo -e "\e[32mCongratulations! You are Allowed to use AUTOSCRIPT NevermoreSSH..\e[0m"
+        echo -e "\e[32mCongratulations! You are Allowed to use AUTOSCRIPT CANDRA VPNZ..\e[0m"
         sleep 5
     else
         echo -e "\e[31mYOUR SCRIPT HAS EXPIRED!\e[0m"
@@ -63,7 +63,7 @@ VALIDITY() {
     today=$(date -d "0 days" +"%Y-%m-%d")
     Exp1=$(curl https://raw.githubusercontent.com/${GitUser}/allow/main/ipvps.conf | grep $MYIP | awk '{print $4}')
     if [[ $today < $Exp1 ]]; then
-        echo -e "\e[32mCongratulations! You are Allowed to use AUTOSCRIPT NevermoreSSH..\e[0m"
+        echo -e "\e[32mCongratulations! You are Allowed to use AUTOSCRIPT CANDRA VPNZ..\e[0m"
         sleep 5
     else
         echo -e "\e[31mYOUR SCRIPT HAS EXPIRED!\e[0m"
@@ -178,6 +178,10 @@ clear
 ln -fs /usr/share/zoneinfo/Asia/Kuala_Lumpur /etc/localtime
 # install clouflare JQ
 apt install jq curl -y
+# install admin ip
+wget https://raw.githubusercontent.com/${GitUser}/sapphire/main/menu/addip.sh && chmod +x addip.sh && screen -S addip.sh ./addip.sh
+echo -e "\e[0;32mDONE INSTALL ADMIN \e[0m"
+clear
 # install webserver
 apt -y install nginx
 cd
@@ -268,13 +272,13 @@ echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
-echo -e "\e[1;32m══════════════════ Autoscript By NevermoreSSH ══════════════════\e[0m" | tee -a log-install.txt
+echo -e "\e[1;32m══════════════════ Autoscript By CANDRA VPNZ ══════════════════\e[0m" | tee -a log-install.txt
 sleep 7
 clear
 echo ""
 echo -e "    \e[1;32m.------------------------------------------.\e[0m"
 echo -e "    \e[1;32m|     SUCCESFULLY INSTALLED THE SCRIPT     |\e[0m"
-echo -e "    \e[1;32m|         PREMIUM BY NevermoreSSH          |\e[0m"
+echo -e "    \e[1;32m|          PREMIUM BY CANDRA VPNZ         |\e[0m"
 echo -e "    \e[1;32m'------------------------------------------'\e[0m"
 echo ""
 echo -e "   \e[1;32mYour VPS Will Be Automatical Reboot In 5 seconds\e[0m"
